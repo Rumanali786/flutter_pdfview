@@ -191,6 +191,7 @@
 - (void)layoutSubviews {
     [super layoutSubviews];
     _pdfView.frame = self.frame;
+    _pdfView.autoScales = true;
     _pdfView.minScaleFactor = _pdfView.scaleFactorForSizeToFit;
     _pdfView.maxScaleFactor = 4.0;
     if (_autoSpacing) {
